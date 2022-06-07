@@ -1,0 +1,20 @@
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.logs-book {
+    min-height: 200px;
+}
+
+.logs-list {
+    max-height: 400px;
+}
+
+.logs-list ul {
+    list-style: none;
+}
+
+.log-form textarea {
+    resize: none;
+}
+
