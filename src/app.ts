@@ -7,7 +7,7 @@ const logType = document.querySelector('#type') as HTMLSelectElement
 const logsBook = document.querySelector('#logs') as HTMLUListElement
 const form = document.querySelector('#form') as HTMLFormElement
 
-const createCloseButton = () => {
+const createCloseButton = (): void => {
     const closeButton = document.createElement('button')
     closeButton.classList.add('btn', 'btn-close', 'float-end')
     let lastLi = logsBook.lastChild!
@@ -35,7 +35,7 @@ const handleData = (): void => {
     createCloseButton()
 }
 
-form.addEventListener('submit', (e: Event) => {
+form.addEventListener('submit', (e: Event): void => {
     e.preventDefault()
     handleData()
 
